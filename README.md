@@ -1,8 +1,8 @@
-geoipupdater
+MaxMind GeoLite Country updater
 ============
 
-Python script for updating Maxmind GeoIP Country database
+Python script for periodically updating your local copy of Maxmind GeoLiteCountry database.
 
-Can easily be altered to update any other file.
+Based on Python Requests.
 
-Uses python requests.
+Can quite easily be change to handle update any other file.
