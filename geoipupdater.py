@@ -22,10 +22,10 @@ class GeoIP:
 			filename='%s.log'%os.path.abspath(__file__)[:-3])
 		self.datfile = '/usr/share/GeoIP/GeoIP.dat'
 		log.info('Checking for newer version of %s' % self.datfile)
-		self.upd8()
+		self.update()
 		exit()
 
-	def upd8(self):
+	def update(self):
 		r = head(self.url)
 		if r.headers and 'last-modified' in r.headers:
 			remote_lm = datetime.strptime(r.headers['last-modified'], '%a, %d %b %Y %H:%M:%S GMT')
