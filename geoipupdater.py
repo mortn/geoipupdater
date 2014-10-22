@@ -42,6 +42,8 @@ class GeoIP:
 				exit(sys.exc_info())
 			except Exception:
 				log.error(sys.exc_info()[1])
+		else:
+			log.info('No newer version found online')
 
 	def get_last_modified(self):
 		try:
